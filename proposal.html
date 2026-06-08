@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ヒトキワ様 動画活用・営業戦略プロモーション提案書</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FFFFFF; --bg2:#F6F8FA; --surface:#FFFFFF; --surface2:#F4F7FA; --line:#E3E7EC; --line2:#EEF1F4;
+    --text:#1A2433; --muted:#5B6675; --soft:#8C95A2;
+    --blue:#1F5C99; --blue-br:#2C72B8; --blue-deep:#143A60;
+    --coral:#C9582A; --coral-soft:#FBEFE7;
+    --mint:#0F8A66; --mint-soft:#E7F4EE;
+    --blue-soft:#EDF3FA;
+    --en:"Archivo",sans-serif;
+    --sans:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0; background:var(--bg); color:var(--text); font-family:var(--sans); font-size:16px; line-height:1.9; letter-spacing:.01em; -webkit-font-smoothing:antialiased;}
+  p{margin:0 0 1em;}
+  strong{color:var(--blue-deep); font-weight:700;}
+  a{color:var(--blue); text-decoration:none;}
+  .wrap{max-width:880px; margin:0 auto; padding:0 26px 96px;}
+
+  .bar{display:flex; align-items:center; gap:14px; padding:14px 26px; background:var(--blue-deep); color:#fff;}
+  .bar .logo{font-weight:900; font-size:18px; letter-spacing:.04em;}
+  .bar .en{font-family:var(--en); font-weight:700; font-size:11px; letter-spacing:.26em; color:#9FC0E0;}
+  .bar .spacer{flex:1;}
+  .bar .by{font-size:12px; color:#C7DAEC; letter-spacing:.04em;}
+
+  .hero{padding:64px 0 30px; border-bottom:1px solid var(--line);}
+  .hero .kick{font-family:var(--en); font-weight:800; font-size:12px; letter-spacing:.3em; color:var(--blue); margin-bottom:18px;}
+  .hero h1{font-weight:900; font-size:34px; line-height:1.45; margin:0 0 14px; letter-spacing:.01em;}
+  .hero .sub{font-size:16px; color:var(--muted); font-weight:500; margin:0 0 28px;}
+  .hero .meta{display:flex; flex-wrap:wrap; gap:8px 24px; font-size:13px; color:var(--soft); padding-top:16px; border-top:2px solid var(--text);}
+  .hero .meta b{font-family:var(--en); font-weight:700; color:var(--text); letter-spacing:.06em; margin-right:7px;}
+
+  section{padding-top:60px;}
+  .sechead{margin-bottom:22px;}
+  .sechead .en{font-family:var(--en); font-weight:700; font-size:12px; letter-spacing:.24em; color:var(--soft);}
+  .sechead h2{font-weight:900; font-size:25px; line-height:1.4; margin:6px 0 12px; display:flex; align-items:baseline; gap:12px;}
+  .sechead h2 .no{font-family:var(--en); font-weight:800; font-size:24px; color:var(--blue);}
+  .sechead .rule{height:3px; width:64px; background:var(--blue); border-radius:2px;}
+
+  h3{font-size:17px; font-weight:700; color:var(--text); margin:26px 0 8px;}
+  h3 .pin{color:var(--blue); margin-right:8px;}
+  .lead{color:var(--muted); font-size:15.5px;}
+
+  .callout{margin:24px 0; padding:20px 24px; background:var(--blue-soft); border-left:5px solid var(--blue); border-radius:0 12px 12px 0; font-size:17.5px; font-weight:700; color:var(--blue-deep); line-height:1.65;}
+  .note{font-size:13px; color:var(--soft); line-height:1.7; margin:14px 0;}
+
+  ul.clean{margin:8px 0 16px; padding:0; list-style:none;}
+  ul.clean li{position:relative; padding:5px 0 5px 24px; line-height:1.78;}
+  ul.clean li::before{content:""; position:absolute; left:3px; top:14px; width:7px; height:7px; background:var(--blue); transform:rotate(45deg);}
+  ul.clean li b{color:var(--text); font-weight:700;}
+
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:16px; padding:24px 26px; margin:18px 0; box-shadow:0 6px 20px rgba(26,36,51,.05);}
+  .card.accent{border-top:3px solid var(--blue);}
+  .tag{display:inline-flex; align-items:center; gap:8px; font-family:var(--en); font-weight:700; font-size:11.5px; letter-spacing:.12em; padding:5px 12px; border-radius:7px; margin-bottom:12px;}
+  .tag .jp{font-family:var(--sans); letter-spacing:.04em;}
+  .tag.t1{background:var(--coral-soft); color:#9A4A21;}
+  .tag.t2{background:var(--blue-soft); color:var(--blue-deep);}
+  .tag.t3{background:var(--mint-soft); color:#0B5C46;}
+
+  .tw{overflow-x:auto; margin:16px 0; border:1px solid var(--line); border-radius:14px;}
+  table{width:100%; border-collapse:collapse; font-size:14.5px; min-width:560px;}
+  thead th{background:var(--blue); color:#fff; font-weight:700; text-align:left; padding:13px 16px;}
+  tbody td{padding:13px 16px; border-top:1px solid var(--line2); vertical-align:top; line-height:1.7;}
+  tbody tr:nth-child(even){background:var(--bg2);}
+  td .s{font-weight:700; color:var(--blue-deep);} td small{color:var(--soft);} td b{color:var(--text);}
+
+  .mail{background:var(--bg2); border:1px solid var(--line); border-radius:12px; overflow:hidden; margin:14px 0;}
+  .mail .mh{background:var(--surface2); padding:10px 16px; border-bottom:1px solid var(--line); font-family:var(--en); font-weight:700; font-size:11px; letter-spacing:.18em; color:var(--soft);}
+  .mail .subj{padding:13px 18px; border-bottom:1px solid var(--line2); font-weight:700; color:var(--coral); font-size:14.5px;}
+  .mail .body{padding:16px 18px; font-size:14px; color:var(--muted); line-height:1.9;}
+  .mail .body b{color:var(--text);}
+
+  .smail{display:flex; gap:14px; padding:13px 0; border-top:1px solid var(--line2);}
+  .smail:first-of-type{border-top:none;}
+  .smail .when{font-family:var(--en); font-weight:700; font-size:12px; color:#fff; background:var(--blue); border-radius:7px; padding:5px 10px; height:fit-content; min-width:68px; text-align:center;}
+  .smail .when.last{background:var(--coral);}
+  .smail .sc .t{font-weight:700; color:var(--text); margin-bottom:2px;}
+  .smail .sc .d{font-size:14px; color:var(--muted);}
+
+  .funnel{margin:20px 0;}
+  .frow{display:flex; align-items:center; gap:16px; background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--blue); border-radius:10px; padding:14px 18px; margin-bottom:8px;}
+  .frow .fn{font-family:var(--en); font-weight:800; font-size:18px; color:var(--blue); min-width:28px;}
+  .frow .ft b{color:var(--text); font-weight:700;} .frow .ft span{color:var(--muted); font-size:14px;}
+  .farrow{text-align:center; color:var(--soft); font-size:14px; margin:-2px 0 4px 22px;}
+  .frow.goal{border-left-color:var(--coral);} .frow.goal .fn{color:var(--coral);}
+
+  .prio{display:grid; gap:12px; margin-top:6px;}
+  .pcard{background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:16px 20px;}
+  .pcard .rank{font-family:var(--en); font-weight:700; font-size:11.5px; letter-spacing:.1em; padding:4px 11px; border-radius:6px; display:inline-block; margin-bottom:8px; color:#fff;}
+  .pcard.p1{border-left:4px solid var(--coral);} .pcard.p1 .rank{background:var(--coral);}
+  .pcard.p2{border-left:4px solid var(--blue);} .pcard.p2 .rank{background:var(--blue);}
+  .pcard.p3{border-left:4px solid var(--mint);} .pcard.p3 .rank{background:var(--mint);}
+  .pcard b{color:var(--text);}
+
+  .refs{font-size:13.5px; color:var(--muted);} .refs div{padding:4px 0;}
+  .foot{margin-top:54px; padding-top:18px; border-top:1px solid var(--line); font-size:12px; color:var(--soft); line-height:1.8;}
+  .foot .sig{font-family:var(--en); font-weight:700; color:var(--muted); letter-spacing:.06em;}
+
+  .rv{opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease;}
+  .rv.in{opacity:1; transform:none;}
+  @media (prefers-reduced-motion:reduce){ .rv{opacity:1; transform:none; transition:none;} }
+
+  @media (max-width:600px){ .hero h1{font-size:26px;} .sechead h2{font-size:21px;} .bar .en{display:none;} }
+  @media print{ .rv{opacity:1; transform:none;} .card,.tw,.mail,.callout,.frow,.pcard{break-inside:avoid;} *{-webkit-print-color-adjust:exact; print-color-adjust:exact;} }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <span class="logo">ヒトキワ</span>
+  <span class="en">GLOBAL TALENT</span>
+  <span class="spacer"></span>
+  <span class="by">提案：A.I.KEN ／ 対馬</span>
+</div>
+
+<div class="wrap">
+
+  <header class="hero rv in">
+    <div class="kick">PROPOSAL</div>
+    <h1>動画活用・営業戦略プロモーション提案</h1>
+    <div class="sub">〜 属人営業から卒業し、1人でも回せる仕組みでリードを自動で獲得・育成する 〜</div>
+    <div class="meta">
+      <span><b>FOR</b>ヒトキワ様</span>
+      <span><b>BY</b>A.I.KEN ／ 対馬</span>
+      <span><b>DATE</b>2026.06</span>
+    </div>
+  </header>
+
+  <section class="rv">
+    <div class="sechead"><div class="en">01 — BACKGROUND</div><h2><span class="no">01</span>提案の背景と目的</h2><div class="rule"></div></div>
+    <h3><span class="pin">#</span>市場環境の変化：今がチャンスである理由</h3>
+    <p>2026年4月15日以降の申請から、出入国在留管理庁による「技術・人文知識・国際業務（技人国）」ビザの提出書類の取扱いが変更されました。<strong>カテゴリー3・4（中小企業等）</strong>が主に言語能力を用いて対人業務に従事する外国人を雇用する場合、<strong>CEFR・B2相当（日本語能力試験N2相当等）</strong>の言語能力証明資料の提出が求められるなど、手続きのハードルが大きく上がっています。</p>
+    <p>同時に、特定技能や技能実習での不正行為（賃金未払い等）による受入停止処分が技人国ビザでの受入にも波及する「クロスチェック制度」の強化も見込まれ、企業にはより厳格なコンプライアンスと特定技能への適切な移行・棲み分けが求められています。</p>
+    <p>一方で、人手不足を背景に外国人材採用への需要は拡大が続いています。しかし「必要性はわかっているが、手続きが複雑で踏み出せない」企業が大多数を占めるのが実情です。この「不安」と「需要」が交差するいまこそ、ヒトキワ様の動画が最も効くタイミングです。</p>
+
+    <h3><span class="pin">#</span>動画の価値と活用の方向性</h3>
+    <div class="tw"><table>
+      <thead><tr><th>動画</th><th>内容</th><th>経営者に与えるインパクト</th></tr></thead>
+      <tbody>
+        <tr><td><b>特定技能説明動画</b></td><td>技人国審査厳格化の背景と、特定技能への切り替えを促す内容</td><td>「今のままでは危ない」という危機感の醸成</td></tr>
+        <tr><td><b>企業カテゴリー案内動画</b></td><td>カテゴリー1〜4の違いと、カテゴリー2への引き上げ準備の重要性を解説</td><td>「自社はどのカテゴリーか？」という自己認識と相談動機の創出</td></tr>
+      </tbody>
+    </table></div>
+    <p>この動画を「営業同席の小道具」ではなく<strong>「24時間働く集客資産」</strong>として活用し、マンパワー不足を補いながら効率的にリードを獲得・育成します。</p>
+  </section>
+
+  <section class="rv">
+    <div class="sechead"><div class="en">02 — TARGET</div><h2><span class="no">02</span>ターゲット設定</h2><div class="rule"></div></div>
+    <div class="tw"><table>
+      <thead><tr><th>属性</th><th>詳細</th><th>抱えている課題・心理</th></tr></thead>
+      <tbody>
+        <tr><td class="s">主要業種</td><td>飲食業・建設業・製造業・宿泊業・介護福祉</td><td>慢性的な人手不足。必要性は感じるが手続きが煩雑で二の足を踏む</td></tr>
+        <tr><td class="s">企業規模</td><td>中小企業（カテゴリー3・4に該当する可能性が高い）</td><td>専任の人事がおらず、経営者・役員が採用を兼務。法改正を追いきれない</td></tr>
+        <tr><td class="s">ペルソナ</td><td>経営者・役員・人事責任者（40〜60代男性が中心）</td><td>「最近ビザが取りにくくなったらしい」という漠然とした不安</td></tr>
+      </tbody>
+    </table></div>
+    <div class="card accent">
+      <span class="tag t2">PERSONA</span>
+      <h3 style="margin-top:0;">製造業 経営者・田中社長（55歳）</h3>
+      <p style="margin:0; color:var(--muted);">従業員30名の金属加工会社を経営。数年前から日本人の採用が難しくなり、3年前にベトナム人を2名採用。現在は技人国ビザで雇用しているが、取引先から「最近ビザが取りにくくなったらしい」と聞き不安を感じている。何が変わったのか、自社がどう対応すべきかは分からない。ネットで調べても難しく、誰かに相談したいと思っている。</p>
+    </div>
+  </section>
+
+  <section class="rv">
+    <div class="sechead"><div class="en">03 — FUNNEL</div><h2><span class="no">03</span>全体設計：認知→相談のファネル</h2><div class="rule"></div></div>
+    <p class="lead">動画を中心に据え、ヒトキワ様が1人でも回せるよう各ステップを可能な限り自動化します。</p>
+    <div class="funnel">
+      <div class="frow"><span class="fn">01</span><span class="ft"><b>認知</b>　<span>SNS・広告・業界団体</span></span></div>
+      <div class="farrow">▼</div>
+      <div class="frow"><span class="fn">02</span><span class="ft"><b>興味・教育</b>　<span>動画視聴（特定技能動画／カテゴリー動画）</span></span></div>
+      <div class="farrow">▼</div>
+      <div class="frow"><span class="fn">03</span><span class="ft"><b>リード獲得</b>　<span>企業カテゴリー診断フォーム（連絡先取得）</span></span></div>
+      <div class="farrow">▼</div>
+      <div class="frow"><span class="fn">04</span><span class="ft"><b>育成（ナーチャリング）</b>　<span>ステップメール・LINEで自動配信</span></span></div>
+      <div class="farrow">▼</div>
+      <div class="frow goal"><span class="fn">05</span><span class="ft"><b>相談・成約</b>　<span>個別無料相談 → ヒトキワのサービス提案</span></span></div>
+    </div>
+  </section>
+
+  <section class="rv">
+    <div class="sechead"><div class="en">04 — STRATEGY</div><h2><span class="no">04</span>具体的な施策と実行プラン</h2><div class="rule"></div></div>
+
+    <div class="card accent">
+      <span class="tag t1">STRATEGY 01 <span class="jp">／ ウェビナー</span></span>
+      <h3 style="margin-top:0;">業種特化型「外国人雇用リスク対策・勉強会」</h3>
+      <p>「2026年入管法改正を乗り越えるための経営者向け勉強会」という名目で、無料オンラインセミナーを月1回定期開催。「営業」ではなく「学びの場」として設計し、警戒心を解いて専門家ポジションを確立します。冒頭10〜15分で動画を上映し、「なぜ今これが問題なのか」の共通認識を持ってもらいます。</p>
+      <h3><span class="pin">›</span>集客方法</h3>
+      <ul class="clean">
+        <li><b>Meta広告：</b>「経営者」「人事担当者」「製造業」「飲食業」等でターゲティング。1クリック100〜200円程度で月30〜50名の集客を目標。</li>
+        <li><b>業界団体のメーリングリスト：</b>商工会議所や業界組合への掲載依頼。</li>
+        <li><b>既存顧客リスト：</b>LINEやメールで既存顧客・見込み客へ案内。</li>
+      </ul>
+      <h3><span class="pin">›</span>セミナー構成（60分）</h3>
+      <div class="tw"><table>
+        <thead><tr><th>時間</th><th>内容</th><th>担当</th></tr></thead>
+        <tbody>
+          <tr><td class="s">0〜5分</td><td>自己紹介・ヒトキワの実績紹介</td><td>ヒトキワ様</td></tr>
+          <tr><td class="s">5〜20分</td><td>動画上映（特定技能動画＋カテゴリー動画）</td><td>動画</td></tr>
+          <tr><td class="s">20〜35分</td><td>動画の解説・自社事例の紹介</td><td>ヒトキワ様</td></tr>
+          <tr><td class="s">35〜50分</td><td>質疑応答</td><td>ヒトキワ様</td></tr>
+          <tr><td class="s">50〜60分</td><td>個別無料相談のご案内・クロージング</td><td>ヒトキワ様</td></tr>
+        </tbody>
+      </table></div>
+      <h3><span class="pin">›</span>冒頭スクリプト例</h3>
+      <div class="mail"><div class="body">「本日はお忙しい中お集まりいただきありがとうございます。2026年4月、外国人雇用のルールが大きく変わりました。特に、飲食業や製造業の皆様にとって、これまでの『技人国ビザ』での採用は非常にハードルが高くなっています。まずは、こちらの動画をご覧ください。なぜ今ビザが取りにくくなっているのか、その背景にある『企業カテゴリー』の真実について解説しています。ご覧いただいた後、きっと『自分の会社は大丈夫なのか？』と感じていただけると思います。」</div></div>
+    </div>
+
+    <div class="card accent">
+      <span class="tag t2">STRATEGY 02 <span class="jp">／ 団体パッケージ</span></span>
+      <h3 style="margin-top:0;">商工会議所・業界団体への「動画パッケージ提供」</h3>
+      <p>商工会議所や業界団体は、会員向けの人手不足対策・法改正セミナーのコンテンツを常に探しています。そこへ「動画＋解説資料＋無料相談会」をセットで無償提供し、団体の集客力と信用力を借りてリードを獲得します。上映後の<b>無料個別相談枠（15〜20分×5〜10社）</b>を担当します。</p>
+      <h3><span class="pin">›</span>アプローチ先の例</h3>
+      <div class="tw"><table>
+        <thead><tr><th>団体種別</th><th>具体例</th><th>アプローチ方法</th></tr></thead>
+        <tbody>
+          <tr><td class="s">商工会議所</td><td>各都道府県・市区町村の商工会議所</td><td>電話 → メールで企画書送付</td></tr>
+          <tr><td class="s">業界組合</td><td>全国飲食業生活衛生同業組合連合会、日本建設業連合会 等</td><td>メールで企画書送付</td></tr>
+          <tr><td class="s">経営者団体</td><td>青年会議所（JC）、経営者勉強会 等</td><td>紹介・SNSでのアプローチ</td></tr>
+          <tr><td class="s">士業ネットワーク</td><td>社会保険労務士、税理士、行政書士 等</td><td>紹介・勉強会での登壇</td></tr>
+        </tbody>
+      </table></div>
+      <h3><span class="pin">›</span>商工会議所へのアプローチメール文面例</h3>
+      <div class="mail">
+        <div class="mh">MAIL TEMPLATE</div>
+        <div class="subj">件名：【ご提案】会員企業様向け「2026年入管法改正・外国人雇用対策セミナー」無料コンテンツ提供のご案内</div>
+        <div class="body">
+          〇〇商工会議所 事務局 ご担当者様<br><br>
+          お世話になっております。国際人材採用支援を行っております、株式会社ヒトキワの〇〇と申します。<br><br>
+          2026年4月の入管法改正により、多くの中小企業様が外国人採用においてビザ取得の壁に直面しています。貴会の会員企業様の中にも、「最近ビザが取りにくくなった」「どう対応すればいいかわからない」とお困りの方がいらっしゃるのではないでしょうか。<br><br>
+          弊社では、この複雑な制度変更と対策を経営者の方が直感的に理解できるよう解説した<b>「特定技能・企業カテゴリー解説動画（約〇分）」</b>を制作いたしました。今回、貴会の定例会やオンラインセミナーにて、この動画を<b>無料で上映コンテンツとしてご提供</b>させていただきたく、ご連絡いたしました。<br><br>
+          上映後には、弊社専門スタッフによる<b>無料の個別相談枠（15分×5社）</b>もセットでご提供可能です。会員企業様への付加価値向上の一助として、ぜひご検討いただけますと幸いです。<br><br>
+          ご興味をお持ちいただけましたら、まずはお電話（TEL: 〇〇-〇〇〇〇-〇〇〇〇）またはこのメールへのご返信にてお知らせください。詳細な企画書をお送りいたします。<br><br>
+          何卒よろしくお願いいたします。<br>
+          株式会社ヒトキワ 〇〇
+        </div>
+      </div>
+    </div>
+
+    <div class="card accent">
+      <span class="tag t3">STRATEGY 03 <span class="jp">／ 自動ナーチャリング</span></span>
+      <h3 style="margin-top:0;">「企業カテゴリー診断」連動・動画ステップメール</h3>
+      <p>Web上に「自社の企業カテゴリー診断（3問）」を設置し、回答に応じて動画を自動配信。個別対応なしで見込み客が自動で育成される状態を作ります。これが全施策の受け皿になります。</p>
+      <h3><span class="pin">›</span>必要なツール（すべて無料または低コスト）</h3>
+      <div class="tw"><table>
+        <thead><tr><th>ツール</th><th>用途</th><th>コスト</th></tr></thead>
+        <tbody>
+          <tr><td class="s">Googleフォーム</td><td>診断アンケートの作成</td><td>無料</td></tr>
+          <tr><td class="s">Googleスプレッドシート</td><td>回答データの管理</td><td>無料</td></tr>
+          <tr><td class="s">Mailchimp等／LINE</td><td>ステップメールの自動配信</td><td>無料〜月数千円</td></tr>
+          <tr><td class="s">YouTube／Vimeo</td><td>動画のホスティング（限定公開）</td><td>無料</td></tr>
+        </tbody>
+      </table></div>
+      <h3><span class="pin">›</span>診断の設問（3問）</h3>
+      <ul class="clean">
+        <li>御社の業種は？（飲食／建設／製造／宿泊／介護・福祉／その他）</li>
+        <li>現在、外国人材を雇用していますか？（技人国で雇用中／特定技能で雇用中／これから検討／未検討）</li>
+        <li>御社のカテゴリー区分は？（上場・公的機関等／源泉徴収税額1,000万円以上・オンライン承認/法定調書合計表は提出／設立間もない・わからない）</li>
+      </ul>
+      <h3><span class="pin">›</span>ステップメールのシナリオ</h3>
+      <div class="smail"><div class="when">即時</div><div class="sc"><div class="t">【診断結果】御社はカテゴリー3・4の可能性があります</div><div class="d">診断結果＋解説動画（3分）を送付。審査厳格化の影響を直接受ける可能性を伝える。</div></div></div>
+      <div class="smail"><div class="when">3日後</div><div class="sc"><div class="t">【補足解説】カテゴリー2として扱われるための準備とは？</div><div class="d">②化の具体的な準備ステップをさらに詳しく解説。</div></div></div>
+      <div class="smail"><div class="when">7日後</div><div class="sc"><div class="t">【無料相談】御社の状況を30分で診断します</div><div class="d">個別相談のオファー。先着・期限を添えて予約を促す。</div></div></div>
+      <div class="smail"><div class="when last">14日後</div><div class="sc"><div class="t">【最終ご案内】無料相談の締め切りが近づいています</div><div class="d">最終クロージング。</div></div></div>
+    </div>
+  </section>
+
+  <section class="rv">
+    <div class="sechead"><div class="en">05 — BUDGET</div><h2><span class="no">05</span>予算計画とフェーズ</h2><div class="rule"></div></div>
+    <p class="lead">最初の3ヶ月は「診断完了率」と「予約CPA」の実数を確定するテスト期間と位置づけます。</p>
+    <div class="tw"><table>
+      <thead><tr><th>フェーズ</th><th>月額予算</th><th>主な配分</th><th>狙い</th></tr></thead>
+      <tbody>
+        <tr><td class="s">0：土台</td><td>0円</td><td>自社サイト・署名・QR・協会</td><td>常設の地盤づくり</td></tr>
+        <tr><td class="s">1：小テスト</td><td>10万円</td><td>検索6万＋Meta4万</td><td>診断完了率・予約CPAの実数取得</td></tr>
+        <tr><td class="s">2：標準（推奨）</td><td>15万円</td><td>検索5万＋比較サイト3万＋Meta新規4万＋リターゲ3万</td><td>予約を安定供給</td></tr>
+        <tr><td class="s">3：拡大</td><td>30万円</td><td>上記＋YouTube・Meta増額</td><td>CPAが見合えば規模拡大</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="rv">
+    <div class="sechead"><div class="en">06 — KPI</div><h2><span class="no">06</span>KPI（重要業績評価指標）</h2><div class="rule"></div></div>
+    <div class="tw"><table>
+      <thead><tr><th>施策</th><th>測定指標</th><th>目標値（月間）</th></tr></thead>
+      <tbody>
+        <tr><td class="s">1. ウェビナー</td><td>参加者数／個別相談への転換率</td><td>参加30名／転換20%（6件）</td></tr>
+        <tr><td class="s">2. 団体パッケージ</td><td>提携団体数／団体経由のリード</td><td>提携2団体／リード20件</td></tr>
+        <tr><td class="s">3. 診断・ステップメール</td><td>診断実施数／動画視聴率／相談申込</td><td>診断100件／視聴50%／申込5件</td></tr>
+        <tr><td class="s">全体</td><td>月間新規個別相談数／成約率</td><td>月30件／成約率30%（9件）</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="rv">
+    <div class="sechead"><div class="en">07 — TIMELINE</div><h2><span class="no">07</span>タイムライン（3ヶ月）</h2><div class="rule"></div></div>
+    <div class="tw"><table>
+      <thead><tr><th>月</th><th>週</th><th>アクション</th></tr></thead>
+      <tbody>
+        <tr><td class="s">1ヶ月目<br><small>準備期</small></td><td>1週</td><td>ターゲット業種の選定（飲食業・製造業に絞り込みを推奨）</td></tr>
+        <tr><td></td><td>2週</td><td>ウェビナーの企画書・集客LPの作成</td></tr>
+        <tr><td></td><td>3週</td><td>診断フォーム（Googleフォーム）およびステップメールの設定</td></tr>
+        <tr><td></td><td>4週</td><td>業界団体へのアプローチリスト作成（商工会議所20社）、アプローチ開始</td></tr>
+        <tr><td class="s">2ヶ月目<br><small>実行期</small></td><td>1週</td><td>ウェビナーの集客開始（SNS・メルマガ・Meta広告）</td></tr>
+        <tr><td></td><td>2週</td><td>診断コンテンツのSNS告知開始</td></tr>
+        <tr><td></td><td>3週</td><td>第1回 勉強会（ウェビナー）開催</td></tr>
+        <tr><td></td><td>4週</td><td>業界団体との打ち合わせ、セミナー登壇の日程調整</td></tr>
+        <tr><td class="s">3ヶ月目<br><small>改善期</small></td><td>1週</td><td>ウェビナー参加者へのフォロー、個別相談の実施</td></tr>
+        <tr><td></td><td>2週</td><td>診断・ステップメール経由の個別相談実施</td></tr>
+        <tr><td></td><td>3週</td><td>各施策のKPI測定、課題の洗い出し</td></tr>
+        <tr><td></td><td>4週</td><td>LP・メール文面・セミナー構成の改善（PDCA）</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section class="rv">
+    <div class="sechead"><div class="en">08 — PRIORITY</div><h2><span class="no">08</span>優先順位と推奨アクション</h2><div class="rule"></div></div>
+    <div class="prio">
+      <div class="pcard p1"><span class="rank">最優先 ／ 今月</span><div><b>施策3（診断フォーム＋ステップメール）</b>の設定。一度仕組みを作れば自動で動き続けるため、費用対効果が最も高い。</div></div>
+      <div class="pcard p2"><span class="rank">次点 ／ 来月</span><div><b>施策2（業界団体へのアプローチ）</b>。自社の集客コストをかけず、団体の既存会員へリーチ。メール1通から始められる。</div></div>
+      <div class="pcard p3"><span class="rank">並行</span><div><b>施策1（ウェビナー）</b>。集めたリードをさらに温め、成約につなげるクロージング施策として活用する。</div></div>
+    </div>
+  </section>
+
+  <section class="rv">
+    <div class="sechead"><div class="en">09 — REFERENCES</div><h2><span class="no">09</span>参考文献</h2><div class="rule"></div></div>
+    <div class="refs">
+      <div>［1］技人国ビザ、2026年4月15日から審査厳格化へ（行政書士しかま事務所）</div>
+      <div>［2］「技人国」に係る提出資料追加の本質（EY Japan）</div>
+      <div>（出入国在留管理庁 在留資格「技術・人文知識・国際業務」提出書類一覧）</div>
+    </div>
+    <div class="foot">
+      ※ 本書の費用・着地数値は一般的な相場に基づく試算であり、実数は配信開始後に確定します。企業カテゴリー区分・制度要件は最新の出入国在留管理庁の基準にてご確認ください。<br>
+      <span class="sig">A.I.KEN ／ 対馬</span>　・　ヒトキワ様 動画活用・営業戦略プロモーション提案書
+    </div>
+  </section>
+
+</div>
+
+<script>
+  (function(){
+    var els=document.querySelectorAll('.rv');
+    if(!('IntersectionObserver' in window)){ els.forEach(function(e){e.classList.add('in');}); return; }
+    var io=new IntersectionObserver(function(en){ en.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target);} }); },{threshold:0.05, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){ io.observe(e); });
+  })();
+</script>
+</body>
+</html>
